@@ -1,0 +1,9 @@
+{% if recipes.has_other_pages %}
+    <div class="container pagination">
+        <div class="pagination-content">
+            {% for page in pagination_range.pagination %}
+            <a class="page-link page-item" href="?page={{page}}">{{page}}</a>
+            {% endfor %}
+        </div>
+    </div>
+{% endif %}
